@@ -27,6 +27,7 @@ import { NavLink } from "react-router-dom";
   .logo {
      height: 20;
     max-width: 25%;
+    background-color-blue;
   `;
 
  export default Header;

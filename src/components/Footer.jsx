@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 import { NavLink } from "react-router-dom";
-import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
+import {  FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -49,9 +49,7 @@ const Footer = () => {
           <div className="footer-social">
             <h3>Follows Us</h3>
             <div className="footer-social--icons">
-              <div>
-                <FaDiscord className="icons" />
-              </div>
+              
               <div>
                 <FaInstagram className="icons" />
               </div>

@@ -1,121 +1,428 @@
- import React from "react";
- import styled from "styled-components";
+//  import React from "react";
+  // import styled from "styled-components";
+// //  import { useGlobalContext } from "./Context";
+//  import { NavLink } from "react-router-dom";
+//  import { Button } from "./styles/Button";
+
+//  const Services = () => {
+//     return <div>Services</div>
+// //   const { services } = useGlobalContext();
+//   console.log(services);
+
+//   return (
+//     <Wrapper className="section">
+//       <h2 className="common-heading">Our Services</h2>
+//       <div className="container grid grid-three-column">
+//         {services.map((curElem) => {
+//           const { id, name, image, description } = curElem;
+//           return (
+//             <div key={id} className="card">
+//               <figure>
+//                 <img src={image} alt={name} />
+//               </figure>
+//               <div className="card-data">
+//                 <h3>{name}</h3>
+//                 <p>{description}</p>
+//                 <NavLink to="/service">
+//                   <Button className="btn">Read More</Button>
+//                 </NavLink>
+//               </div>
+//             </div>
+//           );
+//         })}
+//       </div>
+//     </Wrapper>
+//   );
+// };
+
+// const Wrapper = styled.section`
+//   padding: 9rem 0;
+//   background-color: ${({ theme }) => theme.colors.bg};
+
+//   .container {
+//     max-width: 120rem;
+//   }
+
+//   .card {
+//     border: 0.1rem solid rgb(170 170 170 / 40%);
+//     .card-data {
+//       padding: 0 2rem;
+//     }
+
+//     h3 {
+//       margin: 2rem 0;
+//       font-weight: 300;
+//       font-size: 2.4rem;
+//     }
+//     .btn {
+//       margin: 2rem auto;
+//       background-color: rgb(0 0 0 / 0%);
+//       border: 0.1rem solid rgb(98 84 243);
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       color: rgb(98 84 243);
+//       font-size: 1.4rem;
+
+//       &:hover {
+//         background-color: rgb(98 84 243);
+//         color: #fff;
+//       }
+//     }
+//   }
+
+//   figure {
+//     width: auto;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     overflow: hidden;
+//     transition: all 0.5s linear;
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 0%;
+//       height: 100%;
+//       background-color: rgba(0, 0, 0, 0.5);
+//       transition: all 0.2s linear;
+//       cursor: pointer;
+//     }
+//     &:hover::after {
+//       width: 100%;
+//     }
+//     &:hover img {
+//       transform: scale(1.2);
+//     }
+//     img {
+//       max-width: 90%;
+//       margin-top: 1.5rem;
+//       height: 20rem;
+//       transition: all 0.2s linear;
+//     }
+//   }
+
+//   @media (max-width: ${({ theme }) => theme.media.tab}) {
+//     .grid-three-column {
+//       grid-template-columns: 1fr 1fr;
+//     }
+//   }
+
+//   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+//     .grid-two-column,
+//     .grid-three-column {
+//       grid-template-columns: 1fr;
+//     }
+//    };
+//  `;
+
+//  export default Services;
+//  import styled from "styled-components";
 //  import { useGlobalContext } from "./Context";
- import { NavLink } from "react-router-dom";
- import { Button } from "./styles/Button";
+//import { NavLink } from "react-router-dom";
+//  import { Button } from "./styles/Button";
 
- const Services = () => {
-    return <div>Services</div>
-//   const { services } = useGlobalContext();
-  console.log(services);
+//  import Card from '@mui/material/Card';
+//  import CardActions from '@mui/material/CardActions';
+//  import CardContent from '@mui/material/CardContent';
+//  import CardMedia from '@mui/material/CardMedia';
+//  //import Button from '@mui/material/Button';
+//  import Typography from '@mui/material/Typography';
+// //  import { Grid, Card } from '@mui/material';
 
-  return (
-    <Wrapper className="section">
-      <h2 className="common-heading">Our Services</h2>
-      <div className="container grid grid-three-column">
-        {services.map((curElem) => {
-          const { id, name, image, description } = curElem;
-          return (
-            <div key={id} className="card">
-              <figure>
-                <img src={image} alt={name} />
-              </figure>
-              <div className="card-data">
-                <h3>{name}</h3>
-                <p>{description}</p>
-                <NavLink to="/service">
-                  <Button className="btn">Read More</Button>
-                </NavLink>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </Wrapper>
-  );
+
+import React from 'react';
+import './Card.css';
+import styled from "styled-components";
+
+export const Card = () =>{
+  return(
+<div>
+  <div  className='card-contanier'>
+    <img  src="https://picsum.photos/seed/picsum/300/200" alt="Card Image" className='card-img'   />
+    <h3  className='card-title'>Card Title</h3>
+    <p className='card-des'>This is nature</p>
+    <a className='card-btn' href="cardpage">Portfolio</a></div>
+</div>
+  )
 };
 
-const Wrapper = styled.section`
-  padding: 9rem 0;
-  background-color: ${({ theme }) => theme.colors.bg};
+  export default  Card;
 
-  .container {
-    max-width: 120rem;
-  }
 
-  .card {
-    border: 0.1rem solid rgb(170 170 170 / 40%);
-    .card-data {
-      padding: 0 2rem;
-    }
 
-    h3 {
-      margin: 2rem 0;
-      font-weight: 300;
-      font-size: 2.4rem;
-    }
-    .btn {
-      margin: 2rem auto;
-      background-color: rgb(0 0 0 / 0%);
-      border: 0.1rem solid rgb(98 84 243);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: rgb(98 84 243);
-      font-size: 1.4rem;
 
-      &:hover {
-        background-color: rgb(98 84 243);
-        color: #fff;
-      }
-    }
-  }
 
-  figure {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s linear;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      transition: all 0.2s linear;
-      cursor: pointer;
-    }
-    &:hover::after {
-      width: 100%;
-    }
-    &:hover img {
-      transform: scale(1.2);
-    }
-    img {
-      max-width: 90%;
-      margin-top: 1.5rem;
-      height: 20rem;
-      transition: all 0.2s linear;
-    }
-  }
 
-  @media (max-width: ${({ theme }) => theme.media.tab}) {
-    .grid-three-column {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
 
-  @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    .grid-two-column,
-    .grid-three-column {
-      grid-template-columns: 1fr;
-    }
-   };
- `;
 
- export default Services;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
+<Card sx={{ maxWidth: 345 }}>
+
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="./images/hero.svg"
+        
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+        
+      </CardContent>
+
+    </Card>
+      <div>
+      <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="./images/about1.svg"
+        
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+        
+      </CardContent>
+
+    </Card>
+      </div>
+      <div>
+      <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="./images/error.svg"
+        
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+        
+      </CardContent>
+
+    </Card>
+      </div>
+      <div>
+      <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="./images/logo.png"
+        
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+        
+      </CardContent>
+
+    </Card>
+      </div>
+
+</div>
+
+  )}
+  */}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  {/* 
+<Card sx={{ maxWidth: 345 }}>
+
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="./images/hero.svg"
+        
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+        
+      </CardContent>
+
+    </Card>
+      <div>
+      <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="./images/about1.svg"
+        
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+        
+      </CardContent>
+
+    </Card>
+      </div>
+      <div>
+      <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="./images/error.svg"
+        
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+        
+      </CardContent>
+
+    </Card>
+      </div>
+      <div>
+      <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="./images/logo.png"
+        
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+       
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+        
+      </CardContent>
+
+    </Card>
+      </div>
+
+</div>
+
+  )}
+  */}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,16 @@
+{
+    "links": [
+        {
+            "name": "Homepage",
+            "url": "https://www.example.com/"
+        },
+        {
+            "name": "About Us",
+            "url": "https://www.example.com/about"
+        },
+        {
+            "name": "Contact",
+            "url": "https://www.example.com/contact"
+        }
+    ]
+}

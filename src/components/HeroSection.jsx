@@ -28,6 +28,7 @@ const HeroSection = ({ name, image }) => {
           </picture>
         </div>
       </div>
+      
     </Wrapper>
   );
 };

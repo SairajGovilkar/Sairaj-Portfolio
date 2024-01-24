@@ -3,7 +3,7 @@
 
 const AppContext = React.createContext();
 
-// const API = "https://thapareactapi.up.railway.app";
+// const API = "";
 
 // const intialState = {
 //   name: "",
@@ -18,7 +18,7 @@ const AppProvider = ({ children }) => {
 //     return dispatch({
 //       type: "HOME_UPDATE",
 //       payload: {
-//         name: "Thapa Technical",
+//         name: "",
 //         image: "./images/hero.svg",
 //       },
 //     });

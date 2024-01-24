@@ -12,14 +12,12 @@ import Contact from "./Contact";
     return <HeroSection  {...data} />;
 //   const { updateHomePage } = useGlobalContext();
 
-  useEffect(() => updateHomePage(), []);
+  //useEffect(() => updateHomePage(), []);
 
   return (
     <>
-       <HeroSection />
-//       <Services />
-//       <Contact />
-//     </>
+
+     </>
   );
  };
 

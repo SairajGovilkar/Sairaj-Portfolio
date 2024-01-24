@@ -161,6 +161,7 @@
     border: 1px solid ${({ theme }) => theme.colors.border};
     text-transform: uppercase;
    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+   border-radius: 15px;
 }
     input[type="submit"]{
     max-width: 16rem;
@@ -173,6 +174,7 @@
     text-transform: uppercase;
     font-size: 1.8rem;
     cursor: pointer;
+    border-radius: 15px;
     }
 
 

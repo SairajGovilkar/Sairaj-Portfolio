@@ -185,7 +185,7 @@ const Navbar = () => {
     
     li{
       list-style:none;
-
+      color : whil
       .navbar-link{
         
 
@@ -194,7 +194,8 @@ const Navbar = () => {
           &:visited {
              display: inline-block;
              text-decoration: none;
-             font-size: 1.8rem;
+             
+             font-size: 30rem;
              text-transform: uppercase;
              color: ${({ theme }) => theme.colors.black};
              transition: color 0.3s linear;
@@ -217,7 +218,7 @@ const Navbar = () => {
           <NavLink className ="navbar-link"to="/about"> About</NavLink>  
           </li>
           <li>       
-           <NavLink className="navbar-link"to="/service"> Services</NavLink>          </li>
+           <NavLink className="navbar-link"to="/Services"> Services</NavLink>          </li>
            <li>
         <NavLink className="navbar-link" to="/contact"> Contact</NavLink>
           </li>
